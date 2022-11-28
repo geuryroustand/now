@@ -1,0 +1,18 @@
+.locations-container {
+  background-color: bisque;
+}
+
+.locations-wrapper {
+  background-color: white;
+}
+
+.locations-wrapper ul {
+  display: flex;
+  gap: 10rem;
+}
+
+.locations-wrapper ul li {
+  list-style: none;
+
+  color: #8600ff;
+}

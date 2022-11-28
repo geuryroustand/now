@@ -17,18 +17,21 @@ function collapseAllNavSections(sections) {
  */
 
 export default async function decorate(block) {
+  console.log(block);
   const cfg = readBlockConfig(block);
+
   block.textContent = '';
 
   // fetch nav content
   const navPath = cfg.nav || '/nav';
   const resp = await fetch(`${navPath}.plain.html`);
+
   if (resp.ok) {
     const html = await resp.text();
-
     // decorate nav DOM
     const nav = document.createElement('nav');
     nav.innerHTML = html;
+
     decorateIcons(nav);
 
     const classes = ['brand', 'sections', 'tools'];
@@ -56,6 +59,7 @@ export default async function decorate(block) {
     hamburger.addEventListener('click', () => {
       const expanded = nav.getAttribute('aria-expanded') === 'true';
       document.body.style.overflowY = expanded ? '' : 'hidden';
+
       nav.setAttribute('aria-expanded', expanded ? 'false' : 'true');
     });
     nav.prepend(hamburger);
