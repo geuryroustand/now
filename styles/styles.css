@@ -43,6 +43,11 @@
   --nav-height: 64px;
 }
 
+img {
+  width: 100px;
+  height: 100px;
+}
+
 body {
   font-size: var(--body-font-size-m);
   margin: 0;

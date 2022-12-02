@@ -1,0 +1,40 @@
+.dicoteaser-container {
+  padding: 0 !important;
+}
+
+.dicoteaser-wrapper {
+  max-width: none !important;
+}
+
+.dicoteaser > div {
+  display: flex;
+  gap: 5rem;
+  flex-basis: 100%;
+}
+
+
+.teaser-right > div h4 {
+  transform: translate(0, -60px) rotate(180deg);
+  writing-mode: vertical-rl;
+}
+
+.teaser-right div div:last-of-type {
+  display: flex;
+  gap: 2rem;
+  flex-basis: 100% !important;
+  border-bottom: 2px solid black;
+}
+
+.dicoteaser div div:first-of-type {
+  flex-basis: 100%;
+  transform: translate(0, -65px);
+}
+
+.dicoteaser div div:last-of-type {
+  flex-basis: 60%;
+  padding-right: 6rem;
+  padding-left: 4rem;
+  border-left: 2px solid black;
+}
+
+

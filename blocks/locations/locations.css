@@ -8,11 +8,17 @@
 
 .locations-wrapper ul {
   display: flex;
-  gap: 10rem;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .locations-wrapper ul li {
-  list-style: none;
-
+  list-style: decimal-leading-zero;
   color: #8600ff;
+
+}
+
+
+.another-test-class img{
+  border-radius: 0;
 }

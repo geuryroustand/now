@@ -17,7 +17,6 @@ function collapseAllNavSections(sections) {
  */
 
 export default async function decorate(block) {
-  console.log(block);
   const cfg = readBlockConfig(block);
 
   block.textContent = '';

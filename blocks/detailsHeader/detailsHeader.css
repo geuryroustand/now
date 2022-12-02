@@ -1,0 +1,41 @@
+.detailsheader-container div {
+  max-width: 100%;
+}
+
+.detailsheader > div {
+  display: flex;
+  gap: 6rem;
+}
+
+.detailsheader div div:first-of-type {
+  border-right: 2px solid black;
+}
+
+.detailsheader h1 {
+  font-size: 4.68rem;
+  line-height: 5.31rem;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+.detailsheader h4 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  letter-spacing: 0.3125rem;
+  line-height: 35px;
+  line-height: 2.1875rem;
+  transform: rotate(180deg);
+  writing-mode: tb-rl;
+  margin: 0 15px 0 100px;
+  white-space: nowrap;
+  margin-top:5rem;
+
+
+}
+
+.detailsheader h5 {
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+
+}
